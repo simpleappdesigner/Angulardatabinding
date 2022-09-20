@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-xs-12">
+        <label class="fw-bold">Server Name</label>
+        <input type="text" class="form-control" #newServerName>
+        <label class="fw-bold">Server Content</label>
+        <input type="text" class="form-control" #newServerContent>
+        <br>
+        <button type="button" class="btn btn-primary"
+        (click)="onAddServer({serverName:newServerName.value,serverContent:newServerContent.value})">Add Server</button>
+        &nbsp; <button type="button" class="btn btn-primary"
+        (click)="onAddBlueprint({serverName:newServerName.value,serverContent:newServerContent.value})"> Add Server Blue Print</button>
+    </div>
+</div>
